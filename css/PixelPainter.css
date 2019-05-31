@@ -1,0 +1,205 @@
+* {
+    outline: none;
+}
+
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: -50px;
+  
+}
+
+.canvasCells {
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  display: inline-block;
+  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .4), inset -3px -3px 3px rgba(0, 0, 0, .4);
+
+}
+
+.paletteCells {
+  box-sizing: border-box;
+  margin: 10px;
+  width:40px;
+  height:40px;
+  display:inline-block;
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .4), inset -3px -3px 3px rgba(0, 0, 0, .4);
+}
+
+
+.activeColor {
+  box-sizing: border-box;
+  border: solid 2px #D0D0D0;
+  margin: 2px;
+  width:46px;
+  height:46px;
+  
+}
+
+#pixelPainter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 700px;
+  margin: auto;
+  text-align: right;
+
+}
+
+#pp-canvas {
+  box-sizing: border-box;
+  display: inline-block;
+  border-left: solid 1px #D0D0D0;
+  border-top: solid 1px #D0D0D0;
+  border-radius: 5px;
+}
+
+#cell1-1{
+  border-radius: 5px 0px 0px 0px;
+}
+
+#cell1-30{
+  border-radius: 0px 5px 0px 0px;
+}
+
+#cell30-30{
+  border-radius: 0px 0px 5px 0px;
+}
+
+#cell30-1{
+  border-radius: 0px 0px 0px 5px;
+}
+
+
+#colorPalette {
+ margin-bottom: 10px;
+ 
+}
+
+#toolBox {
+  
+  background-color: #C68E17;
+  display: inline-block;
+  margin-left: 50px;
+  margin-bottom: 70px;
+  vertical-align: top;
+  overflow: auto;
+  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .4), inset -3px -3px 3px rgba(0, 0, 0, .4);
+  padding: 5px;
+  border-radius: 5px;
+
+}
+h1 {
+  text-align: center;
+}
+
+
+.toolBoxButton {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+  border: solid 2px #D0D0D0;
+  background-color: white;
+  display: inline-block;
+  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .4), inset -3px -3px 3px rgba(0, 0, 0, .4);
+}
+
+.clickedButton {
+  box-sizing: border-box;
+  border: solid 2px black;
+  margin: 2px;
+  width:46px;
+  height:46px;
+
+}
+
+/*.toolBoxButtonImg {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin-top: 8px;
+}*/
+
+#clearBtn{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  /*box-shadow: 5px 5px 2px #888888;*/
+  text-align: center;
+  
+  padding-top: 5px;
+  /*border: solid 2px #D0D0D0;*/
+  background-color: white;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .4), inset -3px -3px 3px rgba(0, 0, 0, .4);
+}
+
+.clear-button {
+  color: white;
+  background-color: gray;
+  border: solid 10px;
+  height:100px;
+  width: 150px;
+
+}
+
+#eraser {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: white;
+  display: inline-block;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .4), inset -3px -3px 3px rgba(0, 0, 0, .4);
+}
+
+
+
+@media screen and (max-width: 1020px){
+    #pixelPainter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+  
+}
+
+@media screen and (max-width: 780px){
+  #pixelPainter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  
+  }
+  
+
+}
+
+@media screen and (max-width: 480px){
+  #pixelPainter {
+    width: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+  
+  }
+  
+}
+
+}
