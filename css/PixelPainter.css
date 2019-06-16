@@ -10,6 +10,10 @@ h1 {
   
 }
 
+body {
+  font-family: 'Shadows Into Light Two', cursive;
+
+}
 .canvasCells {
   box-sizing: border-box;
   width: 22px;
@@ -120,19 +124,12 @@ h1 {
 
 }
 
-/*.toolBoxButtonImg {
-  width: 35px;
-  height: 35px;
-  display: inline-block;
-  margin-top: 8px;
-}*/
 
 #clearBtn{
   width: 100px;
   height: 30px;
   border-radius: 5px;
-  /*box-shadow: 5px 5px 2px #888888;*/
-  text-align: center;
+    text-align: center;
   
   padding-top: 5px;
   /*border: solid 2px #D0D0D0;*/
